@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-default" style="scroll-behavior: smooth;">
+  <head>
+    <title><%= @page_title || DEFAULT_PAGE_TITLE %></title>
+    <%= render 'shared/meta_tags' %>
+    <%= render 'shared/stylesheets' %>
+  </head>
+  <body>
+    <header id="main-header">
+      <%= render 'shared/header' %>
+    </header>
+    <main id="main-content">
+      <%= yield %>
+    </main>
+    <footer id="main-footer">
+      <%= render 'shared/footer' %>
+    </footer>
+    <%= render 'shared/modal' %>
+    <%= render 'shared/notification' %>
+    <%= render 'shared/scripts' %>
+  </body>
+</html>

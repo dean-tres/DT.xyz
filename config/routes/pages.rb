@@ -1,4 +1,6 @@
-scope module: 'pages' do
+# scope module: 'pages' do
   # root to: 'Pages::pages#landing'
   root to: 'pages#landing'
-end
+  get '/components', to: 'pages#components'
+  get 'test', to: 'pages#test'
+# end
