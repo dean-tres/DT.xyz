@@ -5,8 +5,127 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Components</title>
+  <%= render 'shared/stylesheets' %>
 </head>
 <body>
-  Components
+
+  <article>
+    <header>
+      <h1>Components</h1>
+    </header>
+
+    <section>
+      <h2>Headings</h2>
+      <h1>Level 1 Heading</h1>
+      <h2>Level 2 Heading</h2>
+      <h3>Level 3 Heading</h3>
+      <h4>Level 4 Heading</h4>
+      <h5>Level 5 Heading</h5>
+      <h6>Level 6 Heading</h6>
+    </section>
+
+    <section>
+      <h2>Horizontal Rule</h2>
+      <hr>
+    </section>
+
+    <section>
+      <h2>Lists</h2>
+
+      <ul>
+        <li>Unordered List Item</li>
+        <li>Unordered List Item</li>
+        <li>Unordered List Item</li>
+      </ul>
+
+      <ol>
+        <li>Ordered List Item</li>
+        <li>Ordered List Item</li>
+        <li>Ordered List Item</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Tables</h2>
+
+      <table>
+      <tr>
+        <th>Heading 1</th>
+        <th>Heading 2</th>
+        <th>Heading 3</th>
+        <th>Heading 4</th>
+      </tr>
+      <tr>
+        <td>Row 1 Col 1</td>
+        <td>Row 1 Col 2</td>
+        <td>Row 1 Col 3</td>
+        <td>Row 1 Col 4</td>
+      </tr>
+      <tr>
+        <td>Row 2 Col 1</td>
+        <td>Row 2 Col 2</td>
+        <td>Row 2 Col 3</td>
+        <td>Row 2 Col 4</td>
+      </tr>
+      <tr>
+        <td>Row 3 Col 1</td>
+        <td>Row 3 Col 2</td>
+        <td>Row 3 Col 3</td>
+        <td>Row 3 Col 4</td>
+      </tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Links</h2>
+      <a href="#components">Back to Top (section link)</a><br>
+      <a href="https://github.com/" target="_blank">Github.com (external link, new window)</a><br>
+      <a href="https://github.com/">Github.com (external link)</a><br>
+      <a href="/components">Home (internal link)</a><br>
+      <a href="mailto: dean.tresadern@gmail.com">Email me (email link)</a><br>
+      <a href="tel: 07516543588">Call (telephone link)</a><br>
+      <a href="/file.zip">File (download link)</a><br>
+      <a href="#" data-clipboard="lol">Copy to clipboard</a><br>
+      <a href="#" data-clipboard-element="lol">Copy to clipboard</a><br>
+      <a href="/assets/images/meta/twitter-image-src.jpg" download="filename.jpg">Download</a><br>
+      <a download="/assets/images/meta/twitter-image-src.jpg">Download</a><br>
+    </section>
+
+    <section>
+      <h2>Preformatted</h2>
+
+      <pre>This is an inline code block</pre>
+
+      <code>
+        def my_method(input:)
+          case input
+            when 1 then 'one'
+            when 2 then 'two'
+            when 3 then 'three'
+          end
+        end
+      </code>
+    </section>
+
+    <section>
+      <h2>Typography</h2>
+
+      <p>A paragraph! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum magnam, quo eius, perspiciatis, nam consequatur natus ut a adipisci vitae repudiandae repellat sed maxime cum numquam cumque placeat minus! Id!</p>
+    </section>
+
+    <section>
+      <h2>Form Elements</h2>
+    </section>
+
+    <section>
+      <h2>Icons</h2>
+
+      <p><i class="icon-test"></i> Test icon</p>
+    </section>
+
+    <footer>
+      <p>Footer</p>
+    </footer>
+  </article>
 </body>
 </html>
