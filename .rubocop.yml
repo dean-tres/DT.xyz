@@ -1,0 +1,13 @@
+inherit_from: .rubocop_base.yml
+
+AllCops:
+  NewCops: enable
+
+Metrics/MethodLength:
+  Max: 25
+
+Style/Documentation:
+  Enabled: false
+
+Style/SymbolArray:
+  Enabled: false
