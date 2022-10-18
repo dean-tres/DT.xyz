@@ -1,3 +1,76 @@
+:root {
+  font-size: 16px;
+}
+
+
+* {
+  font-size: 1em;
+}
+
 body {
   background-color: #ececec;
+  font-size: 1rem;
+  font-family: sans-serif;
+}
+
+
+h1 {
+  font-size: 1.6rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+h4 {
+  font-size: 1.1rem;
+}
+
+h5 {
+  font-size: 0.9rem;
+}
+
+h6 {
+  font-size: 0.8rem;
+}
+
+*[data-clipboard], *[data-clipboard-element] {
+  color: red;
+}
+
+*[data-icon='test']:before {
+  content: 'lolz - ';
+}
+*[data-icon='test']:after {
+  content: ' - ok';
+}
+
+*[data-lol]:before {
+  /* content: url('../images/meta/twitter-image-src.jpg') / 'Alt Text'; */
+  content: attr(data-lol);
+  /* content: attr(textContent); */
+}
+
+a[href^="tel:" i] { /* case insensitive */
+  color: green;
+}
+
+a[href^="mailto:" i] { /* case insensitive */
+  color: orange;
+}
+
+a[href^="http" i] { /* case insensitive */
+  color: purple;
+}
+
+a[href^="#" i] { /* case insensitive */
+  color: grey;
+}
+
+a[download] {
+  color: pink;
 }
