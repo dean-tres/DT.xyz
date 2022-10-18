@@ -34,7 +34,12 @@ module DTXyz
 
     config.exceptions_app = self.routes
 
-    # Don't generate system test files.
-    config.generators.system_tests = nil
+    # Disable unwanted generators
+    config.generators do |g|
+      g.system_tests nil
+      g.stylesheets false
+      g.javascripts false
+      g.helper false
+    end
   end
 end
