@@ -5,3 +5,8 @@
     page meta tags!
 <% end %>
 <b>test</b>
+<% if Rails.env.production? && ENV["RENDER"] %>
+  <p>Production</p>
+  <p>Git branch: <span><%= ENV["RENDER_GIT_BRANCH"] %></span></p>
+  <p>Git commit: <span><%= ENV["RENDER_GIT_COMMIT"] %></span></p>
+<% end %>
