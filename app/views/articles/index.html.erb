@@ -1,0 +1,11 @@
+<p>articles index page</p>
+<% @articles.each do |article| %>
+  <div>
+    <h3><%= article.title %> / <%= article.permalink %></h3>
+    <h5><%= article.created_at %></h5>
+  </div>
+<% end %>
+<hr>
+<% flash.each do |key, value| %>
+  <%= content_tag :div, value, class: "flash #{key}" %>
+<% end %>
