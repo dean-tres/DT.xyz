@@ -5,10 +5,20 @@
   font-size: 16px;
 }
 
-
 * {
+  box-sizing: border-box;
   font-size: 1em;
 }
+
+html, body, p {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
 
 body {
   background-color: #ececec;
@@ -76,4 +86,51 @@ a[href^="#" i] { /* case insensitive */
 
 a[download] {
   color: pink;
+}
+
+div, article {
+  clear: both;
+}
+
+#main-content {
+  display: block;
+}
+
+/* ************************************************************************** */
+
+#main-body {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid red;
+}
+
+#main-header {
+  flex: none;
+  border: 2px solid green;
+}
+
+#main-content {
+  flex: auto;
+  border: 2px solid blue;
+}
+
+#main-footer {
+  flex: none;
+  border: 2px solid green;
+}
+
+/* only immediate children of wrapper */
+.wrapper > article {
+  width: 80%;
+  background-color: #cdcdcd;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+}
+
+div.banner {
+  background-image: url('https://source.unsplash.com/random/1280x300/?cityscape,night');
+  background-size: cover;
+  background-position: center;
+  padding: 2rem;
 }

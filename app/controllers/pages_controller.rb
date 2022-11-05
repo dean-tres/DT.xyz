@@ -12,6 +12,8 @@ class PagesController < ApplicationController
 
   def test; end
 
+  def blank; end
+
   private
 
   def set_page_title
