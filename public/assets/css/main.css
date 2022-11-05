@@ -1,3 +1,6 @@
+@import "colours.css";
+@import "spacing.css";
+
 :root {
   font-size: 16px;
 }
